@@ -37,6 +37,7 @@ function add(){
     createAndWriteOutput('+',initialResult,enteredNumber);
 
 
+    writeToLog('ADD', initialResult, enteredNumber, currentResult);
     
 }
 
@@ -47,6 +48,8 @@ function substract(){
 
     currentResult -= enteredNumber;
     createAndWriteOutput('-',initialResult,enteredNumber);
+
+    writeToLog('SUBSTRACT', initialResult, enteredNumber, currentResult);
 }
 
 
@@ -56,6 +59,8 @@ function divide(){
 
     currentResult /= enteredNumber;
     createAndWriteOutput('/',initialResult,enteredNumber);
+
+    writeToLog('DIVIDE', initialResult, enteredNumber, currentResult);
 }
 
 
@@ -65,6 +70,8 @@ function multiply(){
 
     currentResult *= enteredNumber;
     createAndWriteOutput('*',initialResult,enteredNumber);
+
+    writeToLog('MULTIPLY', initialResult, enteredNumber, currentResult);
 }
 
 
